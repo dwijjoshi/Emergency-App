@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:logo="@drawable/sos3_round"
+
+        app:title="Emergency App"
+        app:titleMarginBottom="28dp"
+
+        app:titleMarginStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter any 5 contacts :"
+        android:textColor="#2B1212"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="(we will send your current location to this 5 contacts via SMS)"
+        android:textColor="#A9402424"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etcontact1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+
+        android:background="@drawable/edit"
+        android:drawableStart="@drawable/ic_baseline_message_24"
+        android:drawableLeft="@drawable/ic_baseline_message_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="#AE301E1E"
+
+
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Enter 1st contact"
+        android:inputType="phone"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="20dp"
+        android:textColor="#9C190A0A"
+        android:textColorHint="#88190D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.051"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+
+
+
+    <EditText
+        android:id="@+id/etcontact2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:background="@drawable/edit"
+        android:drawableStart="@drawable/ic_baseline_message_24"
+        android:drawableLeft="@drawable/ic_baseline_message_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="#AE301E1E"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Enter 2nd contact"
+        android:inputType="phone"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#9C190A0A"
+        android:textColorHint="#88190D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcontact1"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/etcontact3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:background="@drawable/edit"
+        android:drawableStart="@drawable/ic_baseline_message_24"
+        android:drawableLeft="@drawable/ic_baseline_message_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="#AE301E1E"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Enter 3rd contact"
+        android:inputType="phone"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#9C190A0A"
+        android:textColorHint="#88190D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcontact2"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/etcontact4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:background="@drawable/edit"
+        android:drawableStart="@drawable/ic_baseline_message_24"
+        android:drawableLeft="@drawable/ic_baseline_message_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="#AE301E1E"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Enter 4th contact"
+        android:inputType="phone"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#9C190A0A"
+        android:textColorHint="#88190D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcontact3"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <EditText
+        android:id="@+id/etcontact5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:background="@drawable/edit"
+        android:drawableStart="@drawable/ic_baseline_message_24"
+        android:drawableLeft="@drawable/ic_baseline_message_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="#AE301E1E"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Enter 5th contact"
+        android:inputType="phone"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#9C190A0A"
+        android:textColorHint="#88190D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcontact4"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcontact5"
+        app:layout_constraintVertical_bias="0.414" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
